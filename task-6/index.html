@@ -15,7 +15,10 @@
         </select>
         <button>Remove selected</button>
         <script>
-            // ???
+            const select = document.querySelector('select.colorSelect');
+            document.querySelector('button').addEventListener('click',()=>{
+                select.removeChild(select.selectedOptions[0]);
+            })
         </script>
     </body>
 

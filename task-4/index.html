@@ -20,7 +20,10 @@
         </form>
 
         <script>
-            // ???
+            document.querySelector('#form1').addEventListener('submit',(e)=>{
+                e.preventDefault();
+                console.log(document.querySelector('#fname').value, document.querySelector('#lname').value);
+            })
         </script>
     </body>
 

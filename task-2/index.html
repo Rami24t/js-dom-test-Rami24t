@@ -24,7 +24,12 @@
         <button>Click here to get attributes</button>
 
         <script>
-            // ???
+            const a = document.querySelector('a');
+            const btn = document.querySelector('button');
+            
+            btn.addEventListener('click',()=>{
+                console.log('The href, hreflang, rel, target, and type of the first link:','\nhref: '+a.href,'\nhreflang: '+a.hreflang,'\nrel: '+a.rel,'\ntarget: '+a.target,'\ntype: '+a.type);
+            })
         </script>
     </body>
 

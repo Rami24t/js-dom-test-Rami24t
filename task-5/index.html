@@ -22,7 +22,18 @@
         </table>
         <button>Calculate new column</button>
         <script>
-            // ???
+
+            document.querySelector('button').addEventListener('click',e=>{
+                for(const tr of document.querySelectorAll('table tr'))
+                {
+                    let sum = 0;
+                    for(const td of tr.children)
+                    {
+                        sum+= +td.innerText;
+                    }
+                    tr.innerHTML+=('<td>'+sum+'</td>')
+                }
+            })
         </script>
     </body>
 

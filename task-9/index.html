@@ -12,7 +12,14 @@
             <span id="width"></span>x<span id="height"></span>
         </p>
         <script>
-            // ???
+            const w = document.querySelector('#width');
+            const h = document.querySelector('#height')
+            function displayWH(){
+                w.innerText = window.innerWidth;
+                h.innerText = window.innerHeight;
+            }
+            window.onload = ()=>displayWH();
+            window.onresize = ()=> displayWH();
         </script>
     </body>
 

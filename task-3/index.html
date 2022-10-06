@@ -15,7 +15,14 @@
         </div>
 
         <script>
-            // ???
+            document.querySelectorAll('input').forEach(input=>{
+                input.onfocus = ()=>{
+                    input.style.border = 'solid 3px red';
+                }
+                input.onblur = ()=>{
+                    input.style.border='';
+                }
+            })
         </script>
     </body>
 

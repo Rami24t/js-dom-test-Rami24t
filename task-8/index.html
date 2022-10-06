@@ -11,7 +11,16 @@
         <p>The paragraph above is simply <span>gobbledygook</span>! Nonsense!</p>
         <p>But sometimes, you need nonsense!</p>
         <script>
-            // ???
+            const span = document.querySelector('p span');
+            const p = span.closest('p');
+            p.addEventListener('mouseover',e=>{
+                span.style.fontWeight = 'bold';
+                span.style.color = 'red';
+            }, false)
+            p.addEventListener('mouseout',e=>{
+                span.style.fontWeight = '';
+                span.style.color = '';
+            }, false)
         </script>
     </body>
 
